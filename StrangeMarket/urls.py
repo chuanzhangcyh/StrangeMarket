@@ -19,9 +19,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('auth/', include('user.urls')),
-    path('wrt/apis/', include('apis.urls')),
-    path('wrt/goods/', include('goods.urls')),
-    path('wrt/goodsave/', include('goodsave.urls'))
+    path('wrt/V1.0.0/admin/', admin.site.urls),
+    path('wrt/V1.0.0/auth/', include('user.urls')),
+    path('wrt/V1.0.0/apis/', include('apis.urls')),
+    path('wrt/V1.0.0/goods/', include('goods.urls')),
+    path('wrt/V1.0.0/goodsave/', include('goodsave.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # 加上statis
